@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.IO.Ports;
 using System.Threading;
 
+
 namespace serialport
 {
     /// <summary>
@@ -60,7 +61,7 @@ namespace serialport
         {
             
             sp.Handshake = Handshake.None;
-            sp.ReadTimeout = 19000;// Timeout.Infinite;//300;
+            sp.ReadTimeout = 19000;
             sp.WriteTimeout = 20;
             sp.DtrEnable = true;
             sp.RtsEnable = true;
